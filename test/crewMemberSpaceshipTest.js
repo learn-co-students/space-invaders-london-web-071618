@@ -44,7 +44,6 @@ describe('ship with a crew', () => {
     it("should set the spaceship's warp drive to 'engaged' when the pilot uses engageWarpDrive()", () => {
       defender.engageWarpDrive();
       expect(aluminumFalcon.warpDrive).to.match(/disengaged/i);
-
       pilot.engageWarpDrive();
       expect(aluminumFalcon.warpDrive).to.match(/engaged/i);
     });
